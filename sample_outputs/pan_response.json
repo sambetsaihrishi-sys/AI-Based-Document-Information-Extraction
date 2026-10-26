@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "filename": "test_image.png",
+    "file_type": ".png",
+    "file_size_bytes": 16472,
+    "document_type": "PAN",
+    "extracted_text": null,
+    "extracted_data": {
+        "document_type": "PAN",
+        "name": "RAHUL KUMAR",
+        "date_of_birth": "15/08/2000",
+        "pan_number": "ABCDE1234F"
+    },
+    "message": "Document processing completed"
+}

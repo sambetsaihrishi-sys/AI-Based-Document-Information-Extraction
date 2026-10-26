@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pytesseract
+Pillow
+PyMuPDF
+pytest
+httpx
+python-dotenv

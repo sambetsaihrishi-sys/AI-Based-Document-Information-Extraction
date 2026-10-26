@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI-Based Document Information Extraction</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>AI-Based Document Information Extraction</h1>
+
+            <p>
+                Extract structured information from PAN cards,
+                Aadhaar documents, PDFs, and images.
+            </p>
+        </header>
+
+        <section class="upload-card">
+
+            <h2>Upload Your Document</h2>
+
+            <p>Supported formats: JPG, JPEG, PNG, PDF</p>
+            <p>Maximum file size: 5 MB</p>
+
+            <form id="uploadForm">
+
+                <label for="documentFile">
+                    Choose a document
+                </label>
+
+                <input
+                    type="file"
+                    id="documentFile"
+                    accept=".jpg,.jpeg,.png,.pdf"
+                    required
+                >
+
+                <button type="submit" id="uploadButton">
+                    Extract Information
+                </button>
+
+            </form>
+
+            <p id="statusMessage" role="status" aria-live="polite"></p>
+
+        </section>
+
+        <section class="result-card" id="resultSection" hidden>
+
+            <h2>Extraction Results</h2>
+
+            <pre id="jsonOutput"></pre>
+
+        </section>
+
+    </main>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

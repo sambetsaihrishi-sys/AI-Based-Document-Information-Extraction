@@ -1,0 +1,17 @@
+{
+    "status": "success",
+    "filename": "test_aadhaar.png",
+    "file_type": ".png",
+    "file_size_bytes": 18539,
+    "document_type": "AADHAAR",
+    "extracted_text": null,
+    "extracted_data": {
+        "document_type": "AADHAAR",
+        "name": "PRIYA SHARMA",
+        "date_of_birth": "12/05/2001",
+        "gender": "Female",
+        "aadhaar_number_masked": "XXXX XXXX 7777",
+        "checksum_valid": false
+    },
+    "message": "Document processing completed"
+}

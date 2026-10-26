@@ -1,0 +1,183 @@
+/* Global styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fc;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Main container */
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Upload card */
+
+.upload-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.upload-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.upload-card p {
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+/* Upload form */
+
+#uploadForm {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#uploadForm label {
+    font-weight: 600;
+    text-align: left;
+}
+
+#documentFile {
+    width: 100%;
+    padding: 14px;
+    border: 2px dashed #93c5fd;
+    border-radius: 10px;
+    background: #eff6ff;
+    cursor: pointer;
+}
+
+#documentFile:focus-visible,
+#uploadButton:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Upload button */
+
+#uploadButton {
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#uploadButton:hover {
+    background: #1d4ed8;
+}
+
+#uploadButton:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Status message */
+
+#statusMessage {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Extraction results */
+
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.result-card[hidden] {
+    display: none;
+}
+
+.result-card h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* JSON display */
+
+#jsonOutput {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 25px;
+    border-radius: 12px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .upload-card,
+    .result-card {
+        padding: 22px;
+    }
+
+    .upload-card h2 {
+        font-size: 21px;
+    }
+
+    #jsonOutput {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
