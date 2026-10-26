@@ -42,7 +42,7 @@ Built as a technical assignment for WeMakeScholars.
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/sambetsaihrishi-sys/AI-Based-Document-Information-Extraction.git
 cd "AI-Based Document Information Extraction"
 ```
 
